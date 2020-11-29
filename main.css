@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.zadanie {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.zadanie-a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.zadanie-b {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.task1-im {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    padding: 20px 20px;
+    background-color: cyan;
+}
+
+.task1-im .images-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.task1-im .images-col .images-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.task1-im .images-col .images-item:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.schedule {
+    position: relative;
+}
+
+.schedule ul {
+    schedule-style: none;
+}
+
+.schedule ul li {
+    padding-left: 20px;
+    color: #D76F00;
+}
+
+.schedule ul li::after {
+    position: absolute;
+    left: 0;
+    font-family: FontAwesome;
+}
+
+.schedule ul li:nth-child(1)::after {
+    content: "\f002";
+}
+
+.schedule ul li:nth-child(2)::after {
+    content: "\f27a";
+}
+
+.schedule ul li:nth-child(3)::after {
+    content: "\f004";
+}
+
+.schedule ul li:nth-child(4)::after {
+    content: "\f055";
+}
+
+.schedule ul li:nth-child(5)::after {
+    content: "\f056";
+}
+
+.schedule ul li:nth-child(6)::after {
+    content: "\f057";
+}
+
+.phrase {
+    border-left: 4px solid #2286EC;
+    padding: 10px 15px;
+    font-family: FontAwesome;
+    background-color: #F6E6AD;
+}
+
+.phrase label::before {
+    content: "\f100";
+    color:  #D76F00;
+}
+
+.phrase label::after {
+    content: "\f101";
+    color:  #D76F00;
+}
+
+.chart {
+    width: 350px;
+}
+
+.chart tr th {
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: grey;
+    text-align: left;
+}
+
+.chart tr td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.chart tr td:nth-child(odd) {
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+.chart tr td:nth-child(even) {
+    text-align: right;
+}
